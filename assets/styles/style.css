@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    /* background-color: black;
+    color:white; */
+}
+
+header{
+  width: 100%;
+  border: 2px solid red;
+  clear: both;
+}
+
+
+
+nav div{
+  float: left;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+/* .cat{
+    width: 1200px;
+    height: 500px;
+    font-display: left;
+    background-image: url("https://memeware737668823.files.wordpress.com/2021/03/20181216_095529.jpg?w=1024");
+    background-position: left top;
+    background-repeat: no-repeat;
+    animation-name: sizechange;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+@keyframes sizechange{
+    from {width: 12px;}
+    to {width: 200px;}
+    from {height: 12px;}
+    to {height: 200px;}   
+}
+
+.dog {
+    background-color: blue;
+    animation: loader 5s infinite;
+  } */
+  
+  @supports not (rotate: 0deg) {
+    @keyframes loader {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: scale(0.5) rotateY(90deg);
+      }
+      50% {
+        transfrom: rotate(180deg);
+      }
+      75% {
+        transform: rotateX(270deg);
+        border-radius: 50%;
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+
+
